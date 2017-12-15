@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var express = require('express');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require('./webpack.config');
@@ -17,14 +17,14 @@ app.use('/', express.static(path.join(__dirname, './webclient/')));
 
 
 //Mongoose
-var db = 'mongodb://localhost/test';
-mongoose.connect(db);
+//var db = 'mongodb://localhost/test';
+//mongoose.connect(db);
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-    console.log("connnected with mongo");
-});
+//var db = mongoose.connection;
+//db.on('error', console.error.bind(console, 'connection error:'));
+//db.once('open', function() {
+    //console.log("connnected with mongo");
+//});
 
 
 
