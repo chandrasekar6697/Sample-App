@@ -4,3 +4,14 @@ sudo: required
 language: node_js
 node_js:
   - "stable"
+
+addons:
+  sonarcloud:
+    organization: "chandrasekar6697-github"
+    token:
+      secure: "1dc6623d7e493ff29ebf48ff2d06472337d1459d"
+
+
+script:
+  - sonar-scanner
+  
