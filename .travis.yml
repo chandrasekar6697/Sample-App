@@ -10,8 +10,11 @@ addons:
     organization: "chandrasekar6697-github"
     token:
       secure: "1dc6623d7e493ff29ebf48ff2d06472337d1459d"
+  sauce_connect:
+    username: "chandrasekar6697"
+    access_key: "146afcd1-af58-4dd2-9530-2fb5186a93ce"
 
 
 script:
   - sonar-scanner
-  
+  - npm test
